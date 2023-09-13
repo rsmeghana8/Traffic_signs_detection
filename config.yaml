@@ -1,0 +1,18 @@
+artifacts_root: 
+  artifacts
+
+data_ingestions:
+    root_dir: artifacts/data_ingestion
+    source_dir: Raw_data/ts/ts
+    train_images: artifacts/data_ingestion/images/train
+    train_labels: artifacts/data_ingestion/labels/train
+    test_images: artifacts/data_ingestion/images/test
+    test_labels: artifacts/data_ingestion/labels/test
+    val_images: artifacts/data_ingestion/images/val
+    val_labels: artifacts/data_ingestion/labels/val
+
+    names:
+      0: prohibitor
+      1: danger
+      2: mandatory
+      3: other
