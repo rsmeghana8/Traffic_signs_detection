@@ -13,3 +13,14 @@ class DataIngestionConfig:
     val_labels: Path
     train_test_split: float
     train_val_split : float
+
+@dataclass(frozen=True)
+class TrainingConfig:
+    params_epochs: int
+    exp_name : str
+    image_size: int
+    freeze: int
+
+@dataclass(frozen=True)
+class EvaluationConfig:
+    best_model: Path

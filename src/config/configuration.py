@@ -1,6 +1,6 @@
 from src.constants import *
 from src.utils.common import read_yaml,create_directories
-from src.entity.config_entity import DataIngestionConfig
+from src.entity.config_entity import DataIngestionConfig, TrainingConfig ,EvaluationConfig
 
 
 
@@ -35,3 +35,28 @@ class ConfigurationManager:
             )
 
             return data_ingestion_config
+  
+    
+    def get_training_config(self)-> TrainingConfig:
+
+        config = self.config.Training
+        training_config = TrainingConfig(
+
+            params_epochs= self.params.EPOCHS,
+            exp_name = config.experiment_name,
+            image_size = self.params.IMAGE_SIZE,
+            freeze = self.params.FREEZE_LAYERS
+        )
+        return training_config
+    
+
+    def get_eval_config(self)-> EvaluationConfig:
+
+        config = self.config.evaluation
+
+        training_config = EvaluationConfig(
+
+            best_model = Path(config.runs)/ config.exp_name / config.best
+
+        )
+        return training_config

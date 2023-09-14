@@ -1,0 +1,11 @@
+path: /home/megh/AI/Projects/Traffic_signs_detection
+train: ./artifacts/data_ingestion/images/train
+val: ./artifacts/data_ingestion/images/val
+test: ./artifacts/data_ingestion/images/test
+
+nc: 4
+names:
+      0: prohibitor
+      1: danger
+      2: mandatory
+      3: other

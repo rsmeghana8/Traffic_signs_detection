@@ -1,3 +1,7 @@
+define: &exp_name Fine tuning the whole model without freezing any layers
+define: &runs runs/detect/
+define: &best_path
+
 artifacts_root: 
   artifacts
 
@@ -11,8 +15,13 @@ data_ingestions:
     val_images: artifacts/data_ingestion/images/val
     val_labels: artifacts/data_ingestion/labels/val
 
-    names:
-      0: prohibitor
-      1: danger
-      2: mandatory
-      3: other
+Training:
+    experiment_name: 
+
+evaluation:
+    runs: runs/detect
+    exp_name: Fine tuning the whole model without freezing any layers
+    best: weights/best.pt
+
+
+
