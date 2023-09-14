@@ -161,3 +161,4 @@ cython_debug/
 artifacts/*
 yolov8/*
 Raw_data/*
+runs/*
