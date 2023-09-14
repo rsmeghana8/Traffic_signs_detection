@@ -1,0 +1,41 @@
+#dvc.yaml-JSON Schema for dvc.yaml file (schema.json)| ...
+
+stages:
+  data_ingestion:
+    cmd: python src/pipeline/stage_01_data_ingestion.py
+    deps:
+      - src/pipeline/stage_01_data_ingestion.py
+      - config.yaml
+    params:
+      - TRAIN_TEST_SPLIT
+      - TRAIN_VAL_SPLIT
+    outs:
+      - artifacts/data_ingestion/images
+      - artifacts/data_ingestion/labels
+
+  training:
+    cmd: python src/pipeline/stage_02_training.py
+    deps:
+      - src/pipeline/stage_02_training.py
+      - src/components/prepare_base_model.py
+      - config.yaml
+      - artifacts/data_ingestion/images
+      - artifacts/data_ingestion/labels
+    params:
+      - EPOCHS
+      - IMAGE_SIZE
+      - FREEZE_LAYERS
+    outs:
+      - runs/detect
+
+
+  
+
+  evaluation:
+    cmd: python src/pipeline/stage_03_data_evaluation.py
+    deps:
+      - src/pipeline/stage_03_data_evaluation.py
+      - config.yaml
+      - artifacts/data_ingestion/images
+      - artifacts/data_ingestion/labels
+      - runs/detect
