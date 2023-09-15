@@ -19,14 +19,14 @@ Go right, Go left, Go straight, Go right or straight, Go left or straight, Keep 
 
 ### Installing requirements
 To install all the required libraries,after cloning the repository run the following command:
-'''
+```
     pip install -r requirements.txt
-'''
+```
 
 or install Ultralytics manually - see more at [Ultralytics_docs](https://docs.ultralytics.com/quickstart/)
-'''
+```
     pip install Ultralytics
-'''
+```
     
 
 
