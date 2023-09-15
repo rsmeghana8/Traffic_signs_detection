@@ -6,7 +6,7 @@ The objective of this project is to train and validate the YOLOV8 model from the
 ### Dataset description
 Get the dataset here: [![Traffic_sign_Detection](https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format)
 
-The dataset contain 631 images belonging to 4 classes mentioned below :
+The dataset contain 631 images in '*.jpg' format and '*.txt' files next to every image. These '*.txt' files includes the annotations of the bounding boxes in YOLO format. The images will have objects belonging to 4 classes mentioned below :
 
 * 1. Prohibitory- This category consists of following Traffic Signs: 
  Speed limit, No overtaking, No traffic both ways, No trucks.
@@ -16,3 +16,5 @@ The dataset contain 631 images belonging to 4 classes mentioned below :
 Go right, Go left, Go straight, Go right or straight, Go left or straight, Keep right, Keep left, Roundabout.
 
 * 4. Other- This category consists of following Traffic Sings: Restriction ends, Priority road, Give way, Stop, No entry.
+
+### Dataset Preparation
