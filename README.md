@@ -1,1 +1,1 @@
-# Traffic_signs_detection
+# Custom object detection training of YOLOV8 on Traffic signs dataset
