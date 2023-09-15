@@ -1,10 +1,10 @@
 # Custom training of YOLOV8 on Traffic signs detection dataset
 ### Goals
-The objective of this project is to train and validate the YOLOV8 model from the [[Ultralytics](https://ultralytics.com/) on a custom dataset
+The objective of this project is to train and validate the YOLOV8 model from the [Ultralytics](https://ultralytics.com/) on a custom dataset
 
 ## Documentation
 ### Dataset description
-Get the dataset here: [[Traffic_sign_Detection](https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format)
+Get the dataset here: [Traffic_sign_Detection](https://www.kaggle.com/datasets/valentynsichkar/traffic-signs-dataset-in-yolo-format)
 
 The dataset contain 631 images in '*.jpg' format and '*.txt' files next to every image. These '*.txt' files includes the annotations of the bounding boxes in YOLO format. The images will have objects belonging to 4 classes mentioned below :
 
