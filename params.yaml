@@ -1,5 +1,7 @@
-EPOCHS: 1
+EPOCHS: 100
 TRAIN_TEST_SPLIT: 0.1
 TRAIN_VAL_SPLIT: 0.2
 IMAGE_SIZE: 640
-FREEZE_LAYERS: 0
+FREEZE_LAYERS: 10
+CONF: 0.5 #object confidence threshold for detection
+IOU: 0.7 #IOU threshold for NMS

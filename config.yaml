@@ -1,6 +1,4 @@
-define: &exp_name Fine tuning the whole model without freezing any layers
-define: &runs runs/detect/
-define: &best_path
+
 
 artifacts_root: 
   artifacts
@@ -16,12 +14,15 @@ data_ingestions:
     val_labels: artifacts/data_ingestion/labels/val
 
 Training:
-    experiment_name: 
+    experiment_name: Freezing_top_10layers # Change the experiment name to save results in different directories
 
 evaluation:
-    runs: runs/detect
-    exp_name: Fine tuning the whole model without freezing any layers
+    runs: runs/detect  # evaluation model will take path best model of an exp (run+exp_name+best)
+    exp_name: Freezing_top_10layers/ # same as training exp name
     best: weights/best.pt
+
+prediction:
+    video_path: Raw_data/traffic-sign-to-test.mp4
 
 
 

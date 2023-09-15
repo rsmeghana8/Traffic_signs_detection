@@ -1,6 +1,6 @@
 from src.constants import *
 from src.utils.common import read_yaml,create_directories
-from src.entity.config_entity import DataIngestionConfig, TrainingConfig ,EvaluationConfig
+from src.entity.config_entity import DataIngestionConfig, TrainingConfig ,EvaluationConfig, PredictConfig
 
 
 
@@ -54,9 +54,26 @@ class ConfigurationManager:
 
         config = self.config.evaluation
 
-        training_config = EvaluationConfig(
+        eval_config = EvaluationConfig(
 
             best_model = Path(config.runs)/ config.exp_name / config.best
 
         )
-        return training_config
+        return eval_config
+    
+
+    def get_predict_config(self)-> PredictConfig:
+
+        config_eval = self.config.evaluation
+        config = self.config.prediction
+
+
+        predict_config = PredictConfig(
+
+            video_path= config.video_path,
+            best_model = Path(config_eval.runs)/ config_eval.exp_name / config_eval.best ,
+            conf = self.params.CONF,
+            iou = self.params.IOU
+
+        )
+        return predict_config

@@ -24,3 +24,12 @@ class TrainingConfig:
 @dataclass(frozen=True)
 class EvaluationConfig:
     best_model: Path
+
+
+
+@dataclass(frozen=True)
+class PredictConfig:
+    video_path: Path
+    best_model: Path
+    conf: float
+    iou: float

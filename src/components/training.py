@@ -1,5 +1,7 @@
 from src.config.configuration import TrainingConfig
 from src.components.prepare_base_model import PrepareBaseModel
+import torch
+torch.cuda.empty_cache()
 
 class Training:
   def __init__(self, config: TrainingConfig):
