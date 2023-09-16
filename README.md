@@ -36,7 +36,10 @@ or install Ultralytics manually - (see more at [Ultralytics_docs] (https://docs.
 ### Prepare the data
 After downloading the data, split the dataset into Train,Test,Val in the YOLOV8 data format as below-
 
-Update the paths to these directories in 'data.yaml'
+Update the paths to these directories in 'data.yaml' and use following command
+```
+    python stage_01_data_ingestion.py
+```
 
 ### Training
 Change the hyper-parameters in the 'params.yaml' file to fine-tune and train by running 
@@ -66,6 +69,10 @@ To Evaluate the trained model model on test data, in 'test.yaml' give the path t
 ```
    python stage_03_evaluation.py
 ```
+* Note- Alternative to running Data Ingestion ,training and evaluation pipelines seperatly, they can be run together using 'main.py'
+```
+     python main.py
+``` 
 ### Experiments and results
 Here are some labels from validation data
 
