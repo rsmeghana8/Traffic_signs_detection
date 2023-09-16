@@ -57,6 +57,25 @@ runs/
             └── best.pt
 )
 ```
+### Evaluation
+To Evaluate the trained model model on test data, in 'test.yaml' give the path to test data in for the 'val' key and run
+```
+   python stage_03_evaluation.py
+
+### Experiments and results
+When trained for 100 epochs model got the following results
+
+|      Epochs   |  Train mAP50    | Test mAP50 |
+| :------------ |:---------------:| ----------:|
+|       100     |      78.7       |    87.2    |
+
+When top 10 layers were frozen, the model trained for same 100 epochs performanced very poorly
+
+|      Epochs   |  Train mAP50    | Test mAP50 |
+| :------------ |:---------------:| ----------:|
+|       100     |      10.4       |    15.1    |
+
+
 
 
     
