@@ -1,4 +1,4 @@
-# Custom training of YOLOV8 on Traffic signs detection dataset
+# Custom Training of YOLOV8 on Traffic signs detection dataset
 
 https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/e1e403b4-edcd-4e25-9944-061525bea219
 
@@ -82,7 +82,8 @@ When trained for 100 epochs model got the following results
 
 
 Lets look at the confusion matrix
-<img src="confusion_matrix_normalized](https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/8f3d9ad9-8b16-4e44-a115-41a23f3f9830" width="385px" align="center">
+
+<img src="https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/8f3d9ad9-8b16-4e44-a115-41a23f3f9830" width="385px" align="center">
 
 Model is performing very well for the first two classes but not so great on the other two, this may explained by the imbalances in the instances of these classes
 
