@@ -85,13 +85,17 @@ Lets look at the confusion matrix
 
 <img src="https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/8f3d9ad9-8b16-4e44-a115-41a23f3f9830" width="385px" align="center">
 
+
 Model is performing very well for the first two classes but not so great on the other two, this may explained by the imbalances in the instances of these classes
 
+
 <img src="https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/38b75067-f770-4b3e-baa5-28b7ddf8bce3" width="385px" align="center">
+
 
 These are the result plots: 
 
 ![results](https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/573f37f9-6f95-43a3-b911-a8ed63905b08)
+
 
 When top 10 layers were frozen, the model trained for same 100 epochs performanced very poorly
 
