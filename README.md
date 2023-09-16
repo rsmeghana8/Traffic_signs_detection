@@ -4,7 +4,7 @@ https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/e1e403b4-e
 
 ### Goals
 
-The objective of this project is to implement an image and video object detection classifier using transfer learning the pretrained YOLOV8 model from the [Ultralytics](https://ultralytics.com/) on a custom dataset
+The objective of this project is to implement an image and video object detection classifier using transfer learning on the pretrained YOLOV8 model from the [Ultralytics](https://ultralytics.com/) using a custom dataset
 
 ## Documentation
 ### Dataset description
