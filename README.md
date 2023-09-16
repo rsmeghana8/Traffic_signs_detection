@@ -45,8 +45,7 @@ Change the hyper-parameters in the 'params.yaml' file to fine-tune and train by 
 
 ```
 This will download a pretrained YOLOV8 model 'yolo8n.yaml' and train in on the training data and save the model weights with best validation score as well as last iteration weights in 'runs' directory along with other results with the following structure
-````
-
+```
 runs/
 └── detect/
     ├── train1/
@@ -60,7 +59,7 @@ runs/
         └── weights/
             ├── last.pt
             └── best.pt
-)
+```
 ### Evaluation
 To Evaluate the trained model model on test data, in 'test.yaml' give the path to test data in for the 'val' key and run
 ```
