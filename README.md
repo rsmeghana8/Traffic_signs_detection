@@ -1,5 +1,9 @@
 # Custom training of YOLOV8 on Traffic signs detection dataset
 ### Goals
+
+https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/e1e403b4-edcd-4e25-9944-061525bea219
+
+
 The objective of this project is to implement an image and video object detection classifier using transfer learning the pretrained YOLOV8 model from the [Ultralytics](https://ultralytics.com/) on a custom dataset
 
 ## Documentation
@@ -11,7 +15,11 @@ The dataset contain 631 images in '*.jpg' format and '*.txt' files next to every
 * 1. Prohibitory- This category consists of following Traffic Signs: 
  Speed limit, No overtaking, No traffic both ways, No trucks.
 
-* 2. Danger-  This category consists of following Traffic Sings: Priority at next intersection, Danger, Bend left, Bend right, Bend, Uneven road, Slippery road, Road narrows, Construction, Traffic signal, Pedestrian crossing, School crossing, Cycles crossing, Snow, Animals.
+* 2. Danger-  This category consists of following Traffic Sings: Priority at next intersection, Danger, Bend left, Bend r
+
+https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/a5c093bb-4bb5-47ea-8bf4-60182db0a31d
+
+ight, Bend, Uneven road, Slippery road, Road narrows, Construction, Traffic signal, Pedestrian crossing, School crossing, Cycles crossing, Snow, Animals.
 * 3. Mandatory- This category consists of following Traffic Sings: 
 Go right, Go left, Go straight, Go right or straight, Go left or straight, Keep right, Keep left, Roundabout.
 
