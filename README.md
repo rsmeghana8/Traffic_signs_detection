@@ -82,7 +82,7 @@ When trained for 100 epochs model got the following results
 Lets look at the confusion matrix
 ![confusion_matrix_normalized](https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/8f3d9ad9-8b16-4e44-a115-41a23f3f9830)
 Model is performing very well for the first two classes but not so great on the other two, this may explained by the imbalances in the instances of these classes
-![Screenshot from 2023-09-15 18-46-32](https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/38b75067-f770-4b3e-baa5-28b7ddf8bce3)
+<img src="https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/38b75067-f770-4b3e-baa5-28b7ddf8bce3" width="385px" align="center">
 
 ![results](https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/573f37f9-6f95-43a3-b911-a8ed63905b08)
 
