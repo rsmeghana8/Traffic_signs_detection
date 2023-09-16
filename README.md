@@ -15,11 +15,8 @@ The dataset contain 631 images in '*.jpg' format and '*.txt' files next to every
 * 1. Prohibitory- This category consists of following Traffic Signs: 
  Speed limit, No overtaking, No traffic both ways, No trucks.
 
-* 2. Danger-  This category consists of following Traffic Sings: Priority at next intersection, Danger, Bend left, Bend r
-
-https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/a5c093bb-4bb5-47ea-8bf4-60182db0a31d
-
-ight, Bend, Uneven road, Slippery road, Road narrows, Construction, Traffic signal, Pedestrian crossing, School crossing, Cycles crossing, Snow, Animals.
+* 2. Danger-  This category consists of following Traffic Sings: Priority at next intersection, Danger, Bend left, Bend 
+ right , Bend, Uneven road, Slippery road, Road narrows, Construction, Traffic signal, Pedestrian crossing, School crossing, Cycles crossing, Snow, Animals.
 * 3. Mandatory- This category consists of following Traffic Sings: 
 Go right, Go left, Go straight, Go right or straight, Go left or straight, Keep right, Keep left, Roundabout.
 
@@ -71,17 +68,35 @@ To Evaluate the trained model model on test data, in 'test.yaml' give the path t
    python stage_03_evaluation.py
 ```
 ### Experiments and results
+Here are some labels from validation data
+![val_batch0_labels](https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/7e0f0424-3f69-48b2-b7a5-462d97810397)
+Prediction of our model on the above images
+![val_batch0_pred](https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/0a917b6c-b6b6-44bb-965c-ab13c5c2fbd5)
+
 When trained for 100 epochs model got the following results
 
 |      Epochs   |  Train mAP50    | Test mAP50 |
 | :------------ |:---------------:| ----------:|
 |       100     |      78.7       |    87.2    |
 
+
+Lets look at the confusion matrix
+![confusion_matrix_normalized](https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/8f3d9ad9-8b16-4e44-a115-41a23f3f9830)
+Model is performing very well for the first two classes but not so great on the other two, this may explained by the imbalances in the instances of these classes
+![Screenshot from 2023-09-15 18-46-32](https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/38b75067-f770-4b3e-baa5-28b7ddf8bce3)
+
+![results](https://github.com/rsmeghana8/Traffic_signs_detection/assets/57563443/573f37f9-6f95-43a3-b911-a8ed63905b08)
+
 When top 10 layers were frozen, the model trained for same 100 epochs performanced very poorly
 
 |      Epochs   |  Train mAP50    | Test mAP50 |
 | :------------ |:---------------:| ----------:|
 |       100     |      10.4       |    15.1    |
+
+### To furthur improve the model performance
+* As we can see the model loss still decreasing at 100th epoch, running for more epoch might improve the model
+* Balancing the data instances
+* Changing the augmentation 
 
 
 
