@@ -61,7 +61,6 @@ runs/
             ├── last.pt
             └── best.pt
 )
-```
 ### Evaluation
 To Evaluate the trained model model on test data, in 'test.yaml' give the path to test data in for the 'val' key and run
 ```
