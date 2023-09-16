@@ -94,6 +94,7 @@ Let's look at the confusion matrix
 
 
 
+
 Model is performing very well for the first two classes but not so great on the other two, this might be because of the imbalances in the instances of these classes.
 
 
