@@ -61,7 +61,7 @@ runs/
 To Evaluate the trained model model on test data, in 'test.yaml' give the path to test data in for the 'val' key and run
 ```
    python stage_03_evaluation.py
-
+```
 ### Experiments and results
 When trained for 100 epochs model got the following results
 
